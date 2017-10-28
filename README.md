@@ -56,6 +56,8 @@ vi .env  # write database settings
 
 composer install --no-dev -o
 
+# 在 install 之前务必删掉这个多余的类，否则会报错
+rm vendor/cmgmyr/messenger/src/migrations/2014_10_28_175635_create_threads_table.php
 php artisan hifone:install
 
 chmod -R 777 storage
@@ -110,6 +112,7 @@ These extra dependencies are required to develop Hifone:
 - Gulp
 
 ```shell
+npm install --global gulp-cli
 npm install
 bower install
 gulp
