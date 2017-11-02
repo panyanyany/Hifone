@@ -61,9 +61,7 @@ composer install
 rm vendor/cmgmyr/messenger/src/migrations/2014_10_28_175635_create_threads_table.php
 php artisan hifone:install
 
-chmod -R 777 storage
-chmod -R 777 bootstrap/cache
-chmod -R 777 public/uploads
+chmod -R 777 storage bootstrap/cache public/uploads
 ```
 
 If you have problems to open the Page, enter the Following:
