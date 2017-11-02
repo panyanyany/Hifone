@@ -54,7 +54,8 @@ cd Hifone
 cp .env.example .env
 vi .env  # write database settings
 
-composer install --no-dev -o
+# composer install --no-dev -o
+composer install
 
 # 在 install 之前务必删掉这个多余的类，否则会报错
 rm vendor/cmgmyr/messenger/src/migrations/2014_10_28_175635_create_threads_table.php
