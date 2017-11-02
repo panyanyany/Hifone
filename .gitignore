@@ -1,3 +1,7 @@
+!.env.example
+!.gitignore
+!.bowerrc
+
 .env
 node_modules
 phpunit.xml
